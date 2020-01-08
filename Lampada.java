@@ -25,16 +25,3 @@ package execicio5;
 			}else {System.out.println("Lâmpada desligada");}
 		};
 	};
---------------------------------------------------------------
-Aplicação
-package execicio5;
-import execicio5.Lampada;
-	public class Aplicacao {
-		public static void main(String[] args) {	
-			Lampada l1 = new Lampada();
-			l1.ligar();
-			l1.desligar();
-			l1.imprimir();
-			
-		}
-	}
