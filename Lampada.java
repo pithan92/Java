@@ -1,26 +1,26 @@
 package execicio5;
 
 	public class Lampada {
-		private static boolean enterrupitor = false;
+		private  boolean enterrupitor = false;
 
-		private static boolean isEnterrupitor() {
+		private  boolean isEnterruptor() {
 			return enterrupitor;
 		}
 
-		private void setEnterrupitor(boolean enterrupitor) {
-			Lampada.enterrupitor = enterrupitor;
+		private void setEnterruptor(boolean enterruptor) {
+			Lampada.enterruptor = enterruptor;
 		}
 
 		public boolean ligar() {
-			setEnterrupitor(false);
-			return enterrupitor;
+			setEnterruptor(false);
+			return enterruptor;
 		};
 		public boolean desligar() {
-			setEnterrupitor(true);
-			return enterrupitor;
+			setEnterruptor(true);
+			return enterruptor;
 		};
 		public void imprimir() {
-			if(isEnterrupitor() == false){
+			if(isEnterruptor() == false){
 				System.out.println("Lâmpada ligada");
 			}else {System.out.println("Lâmpada desligada");}
 		};
